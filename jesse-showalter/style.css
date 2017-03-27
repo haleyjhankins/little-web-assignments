@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Open+Sans");
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,132 +17,240 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+  display: block; }
+
 body {
-	line-height: 1;
-}
+  line-height: 1; }
+
 ol, ul {
-	list-style: none;
-}
+  list-style: none; }
+
 blockquote, q {
-	quotes: none;
-}
+  quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';/* http://meyerweb.com/eric/tools/css/reset/
+  content: '';
+  /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
+  /* HTML5 display-role reset for older browsers */
+  content: none; }
+  blockquote:before html, blockquote:before body, blockquote:before div, blockquote:before span, blockquote:before applet, blockquote:before object, blockquote:before iframe,
+  blockquote:before h1, blockquote:before h2, blockquote:before h3, blockquote:before h4, blockquote:before h5, blockquote:before h6, blockquote:before p, blockquote:before blockquote, blockquote:before pre,
+  blockquote:before a, blockquote:before abbr, blockquote:before acronym, blockquote:before address, blockquote:before big, blockquote:before cite, blockquote:before code,
+  blockquote:before del, blockquote:before dfn, blockquote:before em, blockquote:before img, blockquote:before ins, blockquote:before kbd, blockquote:before q, blockquote:before s, blockquote:before samp,
+  blockquote:before small, blockquote:before strike, blockquote:before strong, blockquote:before sub, blockquote:before sup, blockquote:before tt, blockquote:before var,
+  blockquote:before b, blockquote:before u, blockquote:before i, blockquote:before center,
+  blockquote:before dl, blockquote:before dt, blockquote:before dd, blockquote:before ol, blockquote:before ul, blockquote:before li,
+  blockquote:before fieldset, blockquote:before form, blockquote:before label, blockquote:before legend,
+  blockquote:before table, blockquote:before caption, blockquote:before tbody, blockquote:before tfoot, blockquote:before thead, blockquote:before tr, blockquote:before th, blockquote:before td,
+  blockquote:before article, blockquote:before aside, blockquote:before canvas, blockquote:before details, blockquote:before embed,
+  blockquote:before figure, blockquote:before figcaption, blockquote:before footer, blockquote:before header, blockquote:before hgroup,
+  blockquote:before menu, blockquote:before nav, blockquote:before output, blockquote:before ruby, blockquote:before section, blockquote:before summary,
+  blockquote:before time, blockquote:before mark, blockquote:before audio, blockquote:before video, blockquote:after html, blockquote:after body, blockquote:after div, blockquote:after span, blockquote:after applet, blockquote:after object, blockquote:after iframe,
+  blockquote:after h1, blockquote:after h2, blockquote:after h3, blockquote:after h4, blockquote:after h5, blockquote:after h6, blockquote:after p, blockquote:after blockquote, blockquote:after pre,
+  blockquote:after a, blockquote:after abbr, blockquote:after acronym, blockquote:after address, blockquote:after big, blockquote:after cite, blockquote:after code,
+  blockquote:after del, blockquote:after dfn, blockquote:after em, blockquote:after img, blockquote:after ins, blockquote:after kbd, blockquote:after q, blockquote:after s, blockquote:after samp,
+  blockquote:after small, blockquote:after strike, blockquote:after strong, blockquote:after sub, blockquote:after sup, blockquote:after tt, blockquote:after var,
+  blockquote:after b, blockquote:after u, blockquote:after i, blockquote:after center,
+  blockquote:after dl, blockquote:after dt, blockquote:after dd, blockquote:after ol, blockquote:after ul, blockquote:after li,
+  blockquote:after fieldset, blockquote:after form, blockquote:after label, blockquote:after legend,
+  blockquote:after table, blockquote:after caption, blockquote:after tbody, blockquote:after tfoot, blockquote:after thead, blockquote:after tr, blockquote:after th, blockquote:after td,
+  blockquote:after article, blockquote:after aside, blockquote:after canvas, blockquote:after details, blockquote:after embed,
+  blockquote:after figure, blockquote:after figcaption, blockquote:after footer, blockquote:after header, blockquote:after hgroup,
+  blockquote:after menu, blockquote:after nav, blockquote:after output, blockquote:after ruby, blockquote:after section, blockquote:after summary,
+  blockquote:after time, blockquote:after mark, blockquote:after audio, blockquote:after video,
+  q:before html,
+  q:before body,
+  q:before div,
+  q:before span,
+  q:before applet,
+  q:before object,
+  q:before iframe,
+  q:before h1,
+  q:before h2,
+  q:before h3,
+  q:before h4,
+  q:before h5,
+  q:before h6,
+  q:before p,
+  q:before blockquote,
+  q:before pre,
+  q:before a,
+  q:before abbr,
+  q:before acronym,
+  q:before address,
+  q:before big,
+  q:before cite,
+  q:before code,
+  q:before del,
+  q:before dfn,
+  q:before em,
+  q:before img,
+  q:before ins,
+  q:before kbd,
+  q:before q,
+  q:before s,
+  q:before samp,
+  q:before small,
+  q:before strike,
+  q:before strong,
+  q:before sub,
+  q:before sup,
+  q:before tt,
+  q:before var,
+  q:before b,
+  q:before u,
+  q:before i,
+  q:before center,
+  q:before dl,
+  q:before dt,
+  q:before dd,
+  q:before ol,
+  q:before ul,
+  q:before li,
+  q:before fieldset,
+  q:before form,
+  q:before label,
+  q:before legend,
+  q:before table,
+  q:before caption,
+  q:before tbody,
+  q:before tfoot,
+  q:before thead,
+  q:before tr,
+  q:before th,
+  q:before td,
+  q:before article,
+  q:before aside,
+  q:before canvas,
+  q:before details,
+  q:before embed,
+  q:before figure,
+  q:before figcaption,
+  q:before footer,
+  q:before header,
+  q:before hgroup,
+  q:before menu,
+  q:before nav,
+  q:before output,
+  q:before ruby,
+  q:before section,
+  q:before summary,
+  q:before time,
+  q:before mark,
+  q:before audio,
+  q:before video, q:after html, q:after body, q:after div, q:after span, q:after applet, q:after object, q:after iframe,
+  q:after h1, q:after h2, q:after h3, q:after h4, q:after h5, q:after h6, q:after p, q:after blockquote, q:after pre,
+  q:after a, q:after abbr, q:after acronym, q:after address, q:after big, q:after cite, q:after code,
+  q:after del, q:after dfn, q:after em, q:after img, q:after ins, q:after kbd, q:after q, q:after s, q:after samp,
+  q:after small, q:after strike, q:after strong, q:after sub, q:after sup, q:after tt, q:after var,
+  q:after b, q:after u, q:after i, q:after center,
+  q:after dl, q:after dt, q:after dd, q:after ol, q:after ul, q:after li,
+  q:after fieldset, q:after form, q:after label, q:after legend,
+  q:after table, q:after caption, q:after tbody, q:after tfoot, q:after thead, q:after tr, q:after th, q:after td,
+  q:after article, q:after aside, q:after canvas, q:after details, q:after embed,
+  q:after figure, q:after figcaption, q:after footer, q:after header, q:after hgroup,
+  q:after menu, q:after nav, q:after output, q:after ruby, q:after section, q:after summary,
+  q:after time, q:after mark, q:after audio, q:after video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  blockquote:before article, blockquote:before aside, blockquote:before details, blockquote:before figcaption, blockquote:before figure,
+  blockquote:before footer, blockquote:before header, blockquote:before hgroup, blockquote:before menu, blockquote:before nav, blockquote:before section, blockquote:after article, blockquote:after aside, blockquote:after details, blockquote:after figcaption, blockquote:after figure,
+  blockquote:after footer, blockquote:after header, blockquote:after hgroup, blockquote:after menu, blockquote:after nav, blockquote:after section,
+  q:before article,
+  q:before aside,
+  q:before details,
+  q:before figcaption,
+  q:before figure,
+  q:before footer,
+  q:before header,
+  q:before hgroup,
+  q:before menu,
+  q:before nav,
+  q:before section, q:after article, q:after aside, q:after details, q:after figcaption, q:after figure,
+  q:after footer, q:after header, q:after hgroup, q:after menu, q:after nav, q:after section {
+    display: block; }
+  blockquote:before body, blockquote:after body,
+  q:before body, q:after body {
+    line-height: 1; }
+  blockquote:before ol, blockquote:before ul, blockquote:after ol, blockquote:after ul,
+  q:before ol,
+  q:before ul, q:after ol, q:after ul {
+    list-style: none; }
+  blockquote:before blockquote, blockquote:before q, blockquote:after blockquote, blockquote:after q,
+  q:before blockquote,
+  q:before q, q:after blockquote, q:after q {
+    quotes: none; }
+  blockquote:before blockquote:before, blockquote:before blockquote:after,
+  blockquote:before q:before, blockquote:before q:after, blockquote:after blockquote:before, blockquote:after blockquote:after,
+  blockquote:after q:before, blockquote:after q:after,
+  q:before blockquote:before,
+  q:before blockquote:after,
+  q:before q:before,
+  q:before q:after, q:after blockquote:before, q:after blockquote:after,
+  q:after q:before, q:after q:after {
+    content: '';
+    content: none; }
+  blockquote:before table, blockquote:after table,
+  q:before table, q:after table {
+    border-collapse: collapse;
+    border-spacing: 0; }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  border-collapse: collapse;
+  border-spacing: 0; }
 
-
-
-
-
-nav{
-  background-color: rgba(0,0,0,0.5);
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 1px 7px;
   overflow: hidden;
   position: fixed;
   display: inline-block;
   width: 100%;
-  z-index: 2;
-}
+  z-index: 2; }
 
-nav ul{
-  list-style-type:none;
-  float:right;
-  padding-right: 25px;
+nav ul {
+  list-style-type: none;
+  float: right;
+  padding-right: 25px; }
 
-
-}
-
-nav a{
+nav a {
   color: white;
   text-decoration: none;
   font-family: "Open Sans",sans-serif;
-  font-weight: 100;
-}
+  font-weight: 100; }
 
-nav li{
-  float:left;
+nav li {
+  float: left;
   padding-top: 20px;
   padding-bottom: 15px;
   font-size: 17px;
   text-transform: uppercase;
-  padding-right: 20px;
-}
+  padding-right: 20px; }
 
-.logo{
-  height:36px;
-  width:30px;
+.logo {
+  height: 36px;
+  width: 30px;
   margin-left: 29px;
   padding-top: 11px;
-  padding-bottom: 10px;
-}
-
-
-
+  padding-bottom: 10px; }
 
 /*.background-image{
 background-image: url("jesse-jump.jpg");
@@ -149,91 +258,106 @@ z-index: 1;
 position: relative;
 height: 700px;
 }*/
-
-.hero:after{
-  background-color: rgba(5,5,0,.5);
-  position: absolute;
-  content: "";
-  top: 0;
-  right:0;
-  left:0;
-  bottom:0;
-  z-index: -1;
-}
-
-.hero-messaging{
-  z-index: 3;
-  color:white;
-  text-align: center;
-  padding-top:250px;
-  width:80%;
-  margin: 0 auto;
-}
-
-.hero-messaging h1{
-  font-size: 3.2em;
-}
-
-.hero-messaging p{
-  font-size:1.3em;
-  font-family: helvetica;
-
-
-}
-
-.hero{
+/****************************/
+/*Hero jumping area*/
+/****************************/
+.hero {
   background-image: url("jesse-jump.jpg");
   z-index: 1;
   position: relative;
   height: 700px;
-  background-size: cover;
+  background-size: cover; }
 
-}
+.hero:after {
+  background-color: rgba(5, 5, 0, 0.5);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1; }
 
+.hero-messaging {
+  z-index: 3;
+  color: white;
+  text-align: center;
+  padding-top: 250px;
+  width: 80%;
+  margin: 0 auto; }
 
-.recent-projects{
-  padding: 50px 0;
-  overflow: auto;
+.hero-messaging h1 {
+  font-size: 3.2em;
+  margin-bottom: 25px;
+  margin-top: -52px; }
 
-}
-
-
-.projects-row{
-  margin: 0 auto;
+.hero-messaging p {
+  font-size: 1.4em;
+  font-weight: 100;
+  font-family: "Open Sans", sans-serif;
+  line-height: 2;
   width: 90%;
-	overflow: auto;
+  margin: 0 auto; }
 
-}
+.btn {
+  outline: 2px solid #ddc775;
+  text-transform: uppercase;
+  font-size: 25px;
+  display: inline-block;
+  padding: 1.4rem 4rem;
+  margin-top: 45px;
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  font-family: Merriweather, serif; }
 
-.projects-row-2{
-	margin-top: 4%;
+.btn:hover {
+  background-color: #ddc775; }
 
-}
+/****************************/
+/*Project section*/
+/****************************/
+.recent-projects {
+  padding: 50px 0 50px 0;
+  overflow: auto;
+  width: 75%;
+  margin: 0 auto; }
 
-.project{
+.project {
+  width: 28.3333%;
+  float: left;
+  text-align: center;
+  margin: 0 2% 50px 2%;
+  outline: solid red 1px; }
 
-  width:33.3333%;
-  float:left;
-	text-align: center;
+.project h3 {
+  font-size: 1.5em;
+  font-family: sans-serif;
+  color: #3195C2;
+  padding-top: 5%; }
 
-}
+.project p {
+  font-family: open-sans, sans-serif;
+  padding-top: 20px;
+  font-style: italic;
+  font-weight: 300;
+  color: #8492a4;
+  line-height: 2.3rem; }
 
+.project img {
+  max-width: 100%; }
 
-.project h3{
-	font-size: 1.5em;
-	font-family: sans-serif;
-	color: #3195C2;
-	padding-top: 5%;
+/****************************/
+/*Skillset inner*/
+/****************************/
+/****************************/
+/*Media query*/
+/****************************/
+@media (max-width: 1200px) {
+  .project {
+    width: 46%; } }
 
-
-
-}
-
-.project p{
-	font-family: open-sans, sans-serif;
-	padding-top: 20px;
-	font-style: italic;
-	font-weight: 300;
-	color: #8492a4;
-	line-height: 2.3rem;
-}
+@media (max-width: 560px) {
+  .project {
+    width: 96%;
+    float: none; } }

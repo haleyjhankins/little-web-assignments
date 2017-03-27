@@ -1,0 +1,2 @@
+node-sas style.scss srtle.css
+node-sass style.scss style.css --watch

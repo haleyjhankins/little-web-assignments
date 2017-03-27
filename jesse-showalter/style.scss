@@ -1,0 +1,201 @@
+@import 'reset';
+@import 'nav';
+@import 'hero';
+@import 'recent-projects';
+@import 'story';
+@import 'what-i-do';
+
+nav{
+  background-color: rgba(0,0,0,0.5);
+  padding: 1px 7px;
+  overflow: hidden;
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  z-index: 2;
+}
+
+nav ul{
+  list-style-type:none;
+  float:right;
+  padding-right: 25px;
+
+
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 100;
+}
+
+nav li{
+  float:left;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding-right: 20px;
+}
+
+.logo{
+  height:36px;
+  width:30px;
+  margin-left: 29px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+
+
+
+/*.background-image{
+background-image: url("jesse-jump.jpg");
+z-index: 1;
+position: relative;
+height: 700px;
+}*/
+
+
+
+/****************************/
+		/*Hero jumping area*/
+/****************************/
+
+
+.hero{
+  background-image: url("jesse-jump.jpg");
+  z-index: 1;
+  position: relative;
+  height: 700px;
+  background-size: cover;
+
+}
+
+.hero:after{
+  background-color: rgba(5,5,0,.5);
+  position: absolute;
+  content: "";
+  top: 0;
+  right:0;
+  left:0;
+  bottom:0;
+  z-index: -1;
+}
+
+.hero-messaging{
+  z-index: 3;
+  color:white;
+  text-align: center;
+  padding-top:250px;
+  width:80%;
+  margin: 0 auto;
+}
+
+.hero-messaging h1{
+  font-size: 3.2em;
+	margin-bottom: 25px;
+	margin-top: -52px;
+}
+
+.hero-messaging p{
+  font-size:1.4em;
+	font-weight: 100;
+  font-family: "Open Sans", sans-serif;
+	line-height: 2;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.btn{
+		outline: 2px solid rgb(221, 199, 117);
+    text-transform: uppercase;
+    font-size: 25px;
+    display: inline-block;
+    padding: 1.4rem 4rem;
+    margin-top: 45px;
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    font-family: Merriweather, serif;
+
+}
+
+.btn:hover{
+	background-color: rgb(221, 199, 117);
+}
+
+/****************************/
+		/*Project section*/
+/****************************/
+
+.recent-projects{
+  padding: 50px 0 50px 0;
+  overflow: auto;
+	width: 75%;
+	margin: 0 auto;
+}
+
+
+
+.project{
+
+  width:28.3333%;
+  float:left;
+	text-align: center;
+	margin: 0 2% 50px 2%;
+	outline: solid red 1px;
+
+}
+
+
+.project h3{
+	font-size: 1.5em;
+	font-family: sans-serif;
+	color: #3195C2;
+	padding-top: 5%;
+
+}
+
+.project p{
+	font-family: open-sans, sans-serif;
+	padding-top: 20px;
+	font-style: italic;
+	font-weight: 300;
+	color: #8492a4;
+	line-height: 2.3rem;
+}
+
+.project img{
+	max-width: 100%;
+}
+
+
+/****************************/
+		/*Skillset inner*/
+/****************************/
+.skillset-inner{
+
+}
+
+
+
+/****************************/
+		/*Media query*/
+/****************************/
+
+@media (max-width: 1200px){
+	.project{
+		width: 46%;
+
+	}
+}
+
+@media (max-width: 560px){
+	.project{
+		width: 96%;
+		float: none;
+
+	}
+}
