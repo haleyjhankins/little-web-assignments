@@ -137,3 +137,15 @@ table {
   vertical-align: middle;
 
 }
+
+@media (max-width: 939px){
+	.octocat{
+	  width: 47.5%;
+	}
+}
+
+@media (max-width: 616px){
+	.octocat{
+	  width: 95.4%;
+	}
+}
