@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Begin My CSS:  */
+
+
+
+body {
+  max-width: 86%;
+  margin: 0 auto;
+}
+
+.container{
+  background-color: #F6F6EF;
+}
+
+.top-bar{
+  background-color: #FF6600;
+  font-family: veranda;
+  display: block;
+  height: 24px;
+  margin-top: 8px;
+}
+
+.top-bar img{
+  border: 1px solid white;
+  margin-left: 1px;
+  margin-bottom: -4px;
+  margin-top: 1.5px;
+
+}
+
+.top-bar a{
+  padding-right: 9px;
+  padding-left: 9px;
+  color: black;
+  font-size: 11pt;
+  line-height: 10pt;
+  text-decoration: none;
+  font-family: sans-serif;
+
+}
+
+.login{
+  float: right;
+  margin-top: 7px;
+
+}
+
+.hacker-news{
+  font-weight: bold;
+  margin-left: -10px;
+}
+
+ol{
+  padding-top: 12px;
+  color: #828282;
+}
+
+li{
+  list-style-type: decimal;
+  padding-left: 8px;
+
+
+}
+
+.qz-link{
+  float:right;
+  font-size: 13px;
+  color: #828282;
+  padding-right: 590px;
+
+}
+
+.twitter-link{
+  float:right;
+  font-size: 13px;
+  color: #828282;
+  padding-right: 658px;
+}
+
+.bbc-link{
+  float:right;
+  font-size: 13px;
+  color: #828282;
+  padding-right: 910px;
+
+}
+
+p{
+  font-size: 10px;
+  padding-left: 24px;
+  color: #828282;
+  padding-top: 3px;
+  overflow: auto;
+
+}
+
+.bottom-bar a{
+  color: black;
+  font-size: 9pt;
+  line-height: 10pt;
+  text-decoration: none;
+  font-family: sans-serif;
+  margin-left: 60px;
+
+}
+
+footer{
+  border-top: 2px solid rgb(255, 102, 0);
+  background-color: #F6F6EF;
+  padding-bottom: 40px;
+  padding-top: 10px;
+
+}
