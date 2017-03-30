@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>homework1</title>
+  </head>
+
+<body>
+  <h1>My Time at The Iron Yard</h1>
+  <p>I think that it was fate that I got into this class. I had a good feeling from the time I first spoke with The Iron Yard team, and coming on my first day only solidified my confidence that I made the right decision. </p>
+
+  <h2>What I hope to learn </h2>
+  <ul>In addition to gaining the tech skills that I didn't have before, I hope to learn:</ul>
+    <li>Terminal</li>
+    <li>Github </li>
+    <li>(Some) Web Design </li>
+    <li>(Possibly) UX or UX best practices </li>
+
+  <p>While I'm very excited about what I am about to learn, I also have the following anxieties:</p>
+
+  <ol>
+    <li>I'm afraid I will fall behind when we get to Javascript </li>
+    <li>The word "Engineering" in the name of our program makes me nervous because I have never though of myself as a "math-minded" person </li>
+  </ol>
+
+</body>
+
+</html>

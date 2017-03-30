@@ -1,0 +1,26 @@
+#intro{
+  color:red;
+}
+
+#important{
+  font-size: 20px;
+}
+ul{
+  font-size: 20px;
+  align-items: left;
+  color:blue
+}
+
+li{
+  list-style-type: none;
+  align-items: left;
+}
+
+.goal{
+  font-family: sans-serif;
+  color: green
+}
+img{
+  width:350px;
+  height:360px;
+}
