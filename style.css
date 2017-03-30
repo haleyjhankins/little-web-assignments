@@ -1,0 +1,111 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Coolors Exported Palette - coolors.co/50514f-fffcff-a7a7a9-fcfcfc-b8d4e3 */
+/* HSL */
+/* RGB */
+header {
+  font-family: 'Permanent Marker', cursive;
+  background-color: #50514f;
+  color: white;
+  padding: 40px 0 40px 600px;
+  font-size: 30px; }
+
+header h1 {
+  font-size: 60px; }
+
+.column {
+  margin: 0 auto;
+  width: 85%; }
+
+.left {
+  font-family: 'Oswald', sans-serif;
+  background-color: #a7a7a9;
+  width: 15%;
+  height: 700px;
+  float: left;
+  position: relative; }
+
+.left img {
+  border-radius: 100%;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -50px;
+  left: 24px; }
+
+.left p {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 110px; }
+
+.right {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  background-color: #F9F9F9;
+  width: 85%;
+  min-height: 700px;
+  float: right; }
+
+.right p {
+  margin-top: 15px;
+  font-size: 30px; }
+
+footer {
+  background-color: #50514f;
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  font-weight: bold;
+  padding: 40px 0 40px 200px;
+  font-size: 30px;
+  clear: both; }
+
+footer a {
+  font-size: 20px;
+  text-decoration: none; }

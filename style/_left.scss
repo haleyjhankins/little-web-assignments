@@ -1,0 +1,25 @@
+.left{
+  font-family: 'Oswald', sans-serif;
+  background-color:$color3;
+  width: 15%;
+  height: 700px;
+  float: left;
+  position: relative;
+}
+
+.left img{
+  border-radius: 100%;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -50px;
+  left: 24px;
+
+}
+
+.left p{
+  text-align: center;
+  font-size: 17px;
+  margin-top: 110px;
+
+}
