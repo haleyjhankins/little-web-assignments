@@ -54,10 +54,20 @@ header {
   font-family: 'Permanent Marker', cursive;
   background-color: #50514f;
   color: white;
-  padding: 40px 0 40px 600px; }
+  padding: 40px 0 40px 42%; }
 
 header h1 {
   font-size: 60px; }
+
+@media (max-width: 874px) {
+  header h1 {
+    font-size: 90px; } }
+
+@media (max-width: 657px) {
+  header h1 {
+    font-size: 80px; }
+  header {
+    padding: 40px 0 40px 15%; } }
 
 .column {
   margin: 0 auto;
@@ -66,7 +76,7 @@ header h1 {
 .left {
   font-family: 'Oswald', sans-serif;
   background-color: #a7a7a9;
-  width: 15%;
+  width: 20%;
   height: 700px;
   float: left;
   position: relative; }
@@ -77,7 +87,7 @@ header h1 {
   height: 140px;
   position: absolute;
   top: -65px;
-  left: 22px; }
+  left: 50px; }
 
 .left p {
   text-align: center;
@@ -91,7 +101,7 @@ header h1 {
   font-family: 'Oswald', sans-serif;
   text-align: center;
   background-color: #F9F9F9;
-  width: 85%;
+  width: 80%;
   min-height: 700px;
   float: right; }
 

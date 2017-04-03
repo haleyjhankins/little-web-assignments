@@ -2,10 +2,31 @@ header{
   font-family: 'Permanent Marker', cursive;
   background-color:  $color1 ;
   color: white;
-  padding: 40px 0 40px 600px;
+  padding: 40px 0 40px 42%;
 
 }
 
 header h1{
   font-size: 60px;
+}
+
+
+
+
+
+@media (max-width: 874px){
+  header h1{
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 657px){
+  header h1{
+    font-size: 80px;
+
+  }
+  header{
+    padding: 40px 0 40px 15%;
+
+  }
 }
