@@ -6,7 +6,7 @@ for (var i=0; i < playas.length; i++) {
   var newItem = document.createElement('li');
   newItem.textContent =playas[i];
   list.appendChild(newItem);
-  
+
 };
 
 
