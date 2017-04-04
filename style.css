@@ -121,17 +121,17 @@ ul {
 
 .work a {
   text-decoration: none;
-  color: black; }
+  color: teal; }
 
 .work a:visited {
-  color: teal; }
+  color: black; }
 
 .work a:hover {
   color: black;
   font-weight: bold; }
 
 footer a:visited {
-  color: teal; }
+  color: black; }
 
 footer a:hover {
   color: black;
