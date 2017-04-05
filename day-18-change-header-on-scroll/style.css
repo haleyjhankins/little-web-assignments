@@ -48,3 +48,14 @@ table {
 }
 
 /*Start my CSS*/
+
+nav{
+	background-color: black;
+	height: 100px;
+	width: 100%;
+	position: fixed;
+}
+
+body{
+	min-height: 1000px;
+}
