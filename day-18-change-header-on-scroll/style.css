@@ -50,12 +50,29 @@ table {
 /*Start my CSS*/
 
 nav{
-	background-color: black;
+	background-color: #BDBFBD;
 	height: 100px;
 	width: 100%;
 	position: fixed;
 }
 
+
+
+
+.toppic{
+	width: 100%;
+	height: 400px;
+}
+
 body{
-	min-height: 1000px;
+	min-height: 2000px;
+}
+
+h1{
+	font-family: 'Amatic SC', cursive;
+	font-size: 45px;
+	margin-top: 20px;
+	outline: solid 1px grey;
+	text-align: center;
+	font
 }
