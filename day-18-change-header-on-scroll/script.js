@@ -11,6 +11,6 @@ window.addEventListener('scroll', function(){
   }
 
   else if(window.scrollY >= 300 ){
-    nav.style.backgroundColor= '#AF9C84';
+    nav.style.backgroundColor= 'rgba(175,156,132,0.5)';
   }
 });
