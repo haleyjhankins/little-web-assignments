@@ -1,0 +1,84 @@
+.mike{
+  background-image: url('teenagemutantninjaturtlessheet2.gif');
+  width: 48px;
+  height: 65px;
+}
+
+.position-1{
+  background-position: 0 0;
+}
+
+.position-2{
+  width: 48px;
+  height: 65px;
+  background-position: -48px 2;
+}
+
+.position-3{
+  width: 72px;
+  height: 65px;
+  background-position: -103px 0;
+}
+
+.position-4{
+  width: 62px;
+  height: 65px;
+  background-position: -175px 0;
+
+}
+
+.position-5{
+  width: 46px;
+  height: 65px;
+  background-position: -291px 0;
+
+}
+
+.position-6{
+  width: 45px;
+  height: 65px;
+  background-position: -291px 0;
+
+}
+
+.position-7{
+  width: 45px;
+  height: 65px;
+  background-position: -291px 0;
+
+}
+
+.position-8{
+  width: 46px;
+  height: 65px;
+  background-position: -291px 0;
+
+}
+
+.position-9{
+  width: 62px;
+  height: 65px;
+  background-position: -175px 0;
+
+}
+
+.position-10{
+  width: 72px;
+  height: 65px;
+  background-position: -103px 0;
+
+}
+
+.position-11{
+  width: 48px;
+  height: 65px;
+  background-position: -48px 2;
+
+}
+
+.position-12{
+  width: 48px;
+  height: 64px;
+  background-position: -144px 0;
+
+}
