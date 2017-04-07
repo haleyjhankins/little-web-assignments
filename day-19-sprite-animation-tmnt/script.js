@@ -31,18 +31,35 @@
 var mike= document.querySelector('#mike');
 
 var position = 0;
+var direction = 'left';
+
+window.addEventListener('keydown', function (evt){
+  console.log(evt.keyCode);
+  if (evt.keyCode ===37){
+    direction= 'left';
+  }
+  else if (evt.keyCode ===39){
+    direction = 'right';
+  }
+});
 
 function animate() {
 
-  mike.classList.remove('position-' + position);
+  mike.classList.remove('right-position-' + position)
+  mike.classList.remove('left-position-' + position)
   position += 1;
 
   if (position === 7) {
     position = 1;
   }
 
-  mike.classList.add('position-' + position);
+
+
+
+  mike.classList.add(direction +'-position-' + position);
+
+
 }
 
 
-var intervalId = setInterval(animate, 50);
+var intervalId = setInterval(animate, 100);
