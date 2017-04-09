@@ -68,7 +68,6 @@ table {
 }
 
 body{
-	background-color: light-grey;
 }
 
 nav{
@@ -80,11 +79,10 @@ nav{
 h1{
 	color: yellow;
 	font-family: 'Rock Salt', cursive;
-	margin-left: 450px;
-	margin-top: 150px;
 	font-size: 60px;
-	float: left;
-	text-align: center;
+	text-align:center;
+	padding-top: 150px;
+
 }
 
 h2{
@@ -94,7 +92,7 @@ h2{
 	font-weight: bold;
 	display: inline-block;
 	border-bottom: 2px solid black;
-	margin-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 p{
@@ -122,19 +120,18 @@ p{
 }
 
 #widget{
-	float: right;
 	color: white;
 	font-size: 15px;
-	margin-top: 180px;
-	margin-right: 150px;
 	font-family: 'Raleway', sans-serif;
+	padding-top: 50px;
+	text-align: center;
 
 }
 
 #top-image{
 	display: block;
 	margin: auto;
-	width: 50%;
+	width: 60%;
 	margin-bottom: 30px;
 }
 
