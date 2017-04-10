@@ -4,15 +4,27 @@ var promise= $.ajax({
 
 var listOfUsers= document.querySelector('#list-of-users');
 
-promise.done (function(data){
+promise.done(function(data){
 
   for (var i=0; i< data.items.length; i++){
-    // console.log('each object', data.items[i] + 'li');
+    //  console.log('each object', data.items[i] + 'li');
     var li= document.createElement('li');
 
-    var loginH2= document.createElement('h2');
-    loginH2.textContent=data.items[i].login;
-    li.appendChild(loginH2);
+    var image= document.createElement('img');
+    image.src=data.items[i].avatar_url;
+    li.appendChild(image);
+
+    var login= document.createElement('h2');
+    login.textContent=data.items[i].login;
+    li.appendChild(login);
+
+    var url= document.createElement('a');
+    url.href=data.items[i].html_url;
+    url.textContent='Profile'
+    li.appendChild(url);
+
+
+    listOfUsers.appendChild(li);
 
   }
-})
+});
