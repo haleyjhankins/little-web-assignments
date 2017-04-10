@@ -7,15 +7,15 @@ var peopleList= document.querySelector('#people-list');
 
 
 promise.done(function(data){
-  console.log('got the data!' , data);
-  console.log(data.count);
-  console.log('results', data.results);
+  // console.log('got the data!' , data);
+  // console.log(data.count);
+  // console.log('results', data.results);
 
   for (var i=0; i < data.results.length; i++){
     console.log('each object', data.results[i] + 'li');
 
     var anLI= document.createElement('li');
-    // anLI.textContent = data.results[i].name + ' (' + data.results[i].gender + ') ';
+    //  anLI.textContent = data.results[i].name + ' (' + data.results[i].gender + ') ';
 
     var nameH2= document.createElement('h2');
     nameH2.textContent= data.results[i].name;
@@ -32,8 +32,6 @@ promise.done(function(data){
     peopleList.appendChild(anLI);
 
   }
-
-
 
 
 });
