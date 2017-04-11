@@ -3,6 +3,8 @@ var promise = $.ajax({
 
 });
 
+// CHARACTERS
+
 var peopleList= document.querySelector('#people-list');
 
 

@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "distantgalaxy";
+  src: url("Distant-Galaxy/DISTGRG_.ttf"); }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -45,10 +49,73 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-li {
-  border: solid 1px #000;
+body {
+  background-color: black; }
+
+#top-nav {
+  height: 500px;
+  background-color: black;
+  background-image: url("deathstar.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.front {
+  color: white;
+  font-size: 70px;
+  font-family: "distantgalaxy",serif;
+  text-align: center;
+  padding-top: 250px; }
+
+#main-content {
+  background-color: rgba(13, 13, 13, 0.7);
+  width: 60%;
+  margin-left: 5%;
+  margin-right: 5%;
+  min-height: 700px;
+  float: left;
+  color: white; }
+
+#left-nav {
+  float: left;
+  background-color: rgba(13, 13, 13, 0.7);
+  width: 20%;
+  min-height: 700px;
+  margin-left: 5%; }
+
+img {
+  border-radius: 100%;
+  width: 125px;
+  margin: 25px auto 0px auto;
+  display: block; }
+
+a {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  font-family: "distantgalaxy",serif;
+  text-decoration: none;
+  color: #8e2424; }
+
+h1 {
+  color: white;
+  font-size: 70px;
+  font-family: "distantgalaxy",serif;
+  text-align: center;
+  margin-bottom: 50px; }
+
+div {
   padding: 5px; }
+
+li {
+  border: solid 1px red;
+  float: left;
+  width: 600px;
+  color: white;
+  margin-left: 5%;
+  margin-bottom: 5%; }
 
 h2 {
   font-weight: bold;
-  font-family: helvetica, sans-serif; }
+  font-family: helvetica, sans-serif;
+  color: white;
+  padding-bottom: 5px; }
