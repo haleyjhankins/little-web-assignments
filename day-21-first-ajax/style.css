@@ -75,6 +75,24 @@ body {
   float: left;
   color: white; }
 
+.paragraph-1 {
+  padding-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 25px; }
+
+.paragraph-2 {
+  padding-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 25px; }
+
+.paragraph-3 {
+  padding-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 25px; }
+
 #left-nav {
   float: left;
   background-color: rgba(13, 13, 13, 0.7);
