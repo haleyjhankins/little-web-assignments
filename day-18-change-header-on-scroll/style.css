@@ -162,17 +162,6 @@ h1{
 
 }
 
-.mountain-goat{
-
-	height: 350px;
-	width: 400px;
-	margin: 0 auto;
-	transform:rotate(90deg);
-	display: block;
-	padding-top: 15px;
-	padding-bottom: 30px;
-}
-
 .victory{
 	margin-top: 20px;
 
