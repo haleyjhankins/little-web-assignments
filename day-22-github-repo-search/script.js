@@ -1,22 +1,26 @@
 var listOfRepos = document.querySelector('#repos');
 var searchQuery = document.querySelector('#search-query');
+var previousButton= document.querySelector('#previous-button');
+var nextButton= document.querySelector('#next-button');
+
+var page = 1;
+var totalResults;
+var pageCount;
 
 
-searchQuery.addEventListener('keyup', function(evt) {
-
-  if (evt.keyCode !== 13) {
-    return;
-  }
-
+function makeAjaxCall() {
   listOfRepos.innerHTML = '';
-
 
   var promise= $.ajax( {
     url: 'https://api.github.com/search/repositories?q=' + searchQuery.value
   });
 
   promise.done(function(data) {
-    for (var i=0; i <data.items.length; i++){
+
+    totalResults= data.total_count;
+    pageCount= Math.ceil(totalResults /30);
+
+    for (var i=0; i < data.items.length; i++){
       var li= document.createElement('li');
 
       var img= document.createElement ('img');
@@ -39,6 +43,44 @@ searchQuery.addEventListener('keyup', function(evt) {
       listOfRepos.appendChild(li);
     }
 
-  });
 
+    if (page === 1) {
+          previousButton.style.display = 'none';
+        }
+        else {
+          previousButton.style.display = 'inline';
+        }
+
+        if (page >= pageCount) {
+          nextButton.style.display = 'none';
+        }
+        else {
+          nextButton.style.display = 'inline';
+        }
+
+
+      });
+    }
+
+
+
+searchQuery.addEventListener('keyup', function(evt) {
+
+  if (evt.keyCode !== 13) {
+    return;
+  }
+
+  makeAjaxCall();
+});
+
+nextButton.addEventListener('click', function() {
+  //increment number
+  page += 1;
+  //do ajax call again
+  makeAjaxCall();
+});
+
+previousButton.addEventListener('click', function() {
+  page -= 1;
+  makeAjaxCall();
 });

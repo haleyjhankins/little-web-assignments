@@ -45,15 +45,27 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.search-bar {
+  display: block;
+  margin-top: 10px;
+  height: 70px;
+  width: 100%;
+  background-color: grey; }
+
 #search-query {
-  margin-bottom: 40px;
-  margin-left: 650px;
-  margin-top: 20px;
-  width: 200px; }
+  height: 20px;
+  width: 150px;
+  margin-left: 150px;
+  margin-top: 20px; }
 
 #repos {
   float: left;
   margin: 0 auto; }
+
+p {
+  text-align: center;
+  font-family: serif;
+  font-size: 25px; }
 
 li {
   float: left;
