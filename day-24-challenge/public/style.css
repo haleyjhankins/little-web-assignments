@@ -47,6 +47,9 @@ table {
 	border-spacing: 0;
 }
 
+/*Start CSS*/
+
+
 
 .container {
 	margin: 0 auto;
@@ -72,4 +75,9 @@ th {
 	font-family: Helvetica, Verdana, sans-serif;
   color: white;
   text-align: left;
+}
+
+#dates li{
+	border: solid 1px #000;
+	padding: 10px;
 }
