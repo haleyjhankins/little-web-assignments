@@ -1,9 +1,11 @@
 .search-bar{
 display: block;
 margin-top: 10px;
+margin-bottom: 20px;
 height: 70px;
 width: 100%;
-background-color: green;
+background-color: black;
+color: white;
 }
 
 #search-query{
@@ -42,4 +44,11 @@ img{
 a{
   font-size: 20px;
   margin-top: 10px;
+}
+
+.counter{
+  float:right;
+  margin-top: 25px;
+  font-size: 20px;
+  margin-right: 20px;
 }
