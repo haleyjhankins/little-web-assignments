@@ -2,17 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Star Wars People List</title>
+    <title>Star Wars 101</title>
     <link href= 'style.css' rel= 'stylesheet'/>
   </head>
   <body>
 
-    <h1> Starships  </h1>
+    <h1> Starships </h1>
 
-    <ul id= "starship-list">
-    </ul>
+      <ul id= "starship-list">
+      </ul>
+
+      <script type="text/html" id="list-template">
+          <li>
+            <h2>{{name}}</h2>
+            <div>Model: {{model}}</div>
+            <div> Manufacturer: {{manufacturer}}</div>
+            <div>Cost in Credits: {{costInCredits}}</div>
+            <div>Max Atmosphering Speed: {{maxAtmospheringSpeed}}</div>
+            <div>Crew #: {{crew}}</div>
+            <div>Passenger #: {{passengers}}</div>
+          </li>
+      </script>
 
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="starships.js"></script>
 

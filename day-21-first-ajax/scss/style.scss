@@ -3,9 +3,15 @@
   src: url("Distant-Galaxy/DISTGRG_.ttf");
 }
 
+@font-face{
+  font-family: "crawltitle";
+  src:url("swcrawltitle/SWCrawlTitle.ttf");
+}
+
 @import 'reset';
 @import 'sitefeel';
 @import 'top-nav';
 @import 'main-content';
 @import 'left-nav';
 @import 'planets';
+@import 'characters';
