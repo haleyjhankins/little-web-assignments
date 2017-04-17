@@ -73,7 +73,9 @@ li {
   float: left;
   width: 22%;
   margin-left: 8%;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  text-align: center;
+  height: 500px; }
 
 img {
   width: 350px;
@@ -82,7 +84,13 @@ img {
 
 a {
   font-size: 20px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  font-family: sans-serif;
+  color: black;
+  font-weight: bold; }
 
 .counter {
   float: right;
