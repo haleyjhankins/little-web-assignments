@@ -49,9 +49,16 @@ table {
 
 /*Begin my CSS*/
 
+h1{
+	text-align: center;
+	font-size: 25px;
+}
+
 li{
 	float: left;
 	padding: 5px;
+	width: 100px;
+	margin-left: 130px;
 }
 
 #details{
@@ -60,4 +67,6 @@ li{
 
 .large-image{
 	height: 400px;
+	margin-left: 425px;
+	margin-top: 50px;
 }
