@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Image Gallery</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div id="details">
+      <h1> Select an Image</h1>
+    </div>
+
+    <script type="text/html" id="detail-template">
+      <img src="{{fullSize}}" class="large-image"/>
+      <p>{{description}}</p>
+    </script>
+
+
+    <ol id="gallery-list">
+    </ol>
+
+
+    <script type="text/html" id="gallery-template">
+      <li class="row">
+        <img src="{{thumbnail}}" data-index="{{index}}"/>
+      </li>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="gallery.js"></script>
+  </body>
+</html>
