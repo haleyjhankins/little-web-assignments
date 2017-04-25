@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <form action="http://postb.in/b/7RgCFllj" method="post">
+
+
+    <div id="page1">
+
+    First Name<input name="first-name" id="first-name" placeholder="first name" /> <br>
+    Last Name <input name="last-name" id="last-name" placeholder="last name" />
+
+      <button id="nextPage1">Next</button>
+    </div>
+
+
+    <div id="page2">
+
+      <p> Age Range: </p>
+
+      <div id="zero-twenty">
+        <input type="radio" class="age" id="zeroToTwenty" name="age" value="0-20" > 0-20
+      </div>
+      <div id="twentyone-fourty">
+        <input type="radio" class="age" id="twentyOneToFourty" name="age" value= "21-40" > 21-40
+      </div>
+        <div id="fourtyone+">
+          <input type="radio" class="age" id="fourtyOnePlus" name="age" value= "41+" > 41+
+
+          <button id="previousPage1">Previous</button>
+          <button id="nextPage2">Next</button>
+        </div>
+    </div>
+
+
+      <div id="page3">
+
+        <p> Desired Career </p>
+
+        <select>
+          <option> UX/UI Designer</option>
+          <option> Full Stack Developer </option>
+          <option> Front End Developer </option>
+          <option> Back End Developer </option>
+          <option> Stripper </option>
+        </select>
+
+        <button id="previousPage2">Previous</button>
+        <button id="submit">Submit</button>
+      </div>
+
+    </form>
+
+
+
+  <script src="script.js"></script>
+  </body>
+</html>
