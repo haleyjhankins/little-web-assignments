@@ -30,10 +30,30 @@ class SimpleList extends React.Component {
         items: copy
       });
     }
+
   }
 
+  handleItemClick(index) {
+    console.log('you clicked on', index);
+
+    var copy= this.state.items.slice();
+    copy.splice(index, 1);
+    this.setState({
+      items:copy
+    });
+  }
+
+  // copy the array
+  // splice out at that location
+  // reset state, then you're done.
+
+
   render() {
-    var items = this.state.items.map((x, i) => <li key={i}>{x}</li>);
+    let items = this.state.items.map((x, i) => {
+      return <li onClick={() => this.handleItemClick(i)} key={i}>{x}</li>
+    });
+
+
 
     return (
       <div className="simple-list">
