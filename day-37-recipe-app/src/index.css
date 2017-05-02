@@ -21,6 +21,14 @@ footer{
   max-width: 920px;
 }
 
+ footer img{
+  margin: 0 auto;
+
+
+
+
+}
+
 input{
   padding: 5px;
   margin-bottom: 10px;
