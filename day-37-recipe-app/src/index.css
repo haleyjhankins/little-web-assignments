@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header{
+  color: white;
+  background-color: black;
+  font-size: 30px;
+  height: 60px;
+  margin-bottom: 10px;
+
+}
+
+footer{
+  border-top: solid 2px #000;
+  clear: left;
+  padding-top: 5px;
+  margin: 0 auto;
+  max-width: 920px;
+}
+
+input{
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/*Overall Container*/
+.container {
+  margin: 0 auto;
+  max-width: 920px;
+}
+
+/*Container within the overall container*/
+.contents {
+  border-bottom: solid 1px #000;
+  border-left: solid 1px #000;
+  border-right: solid 1px #000;
+  overflow: auto;
+  padding: 20px;
+}
