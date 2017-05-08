@@ -41,10 +41,11 @@ class Counter extends React.Component {
   render() {
     return(
       <div>
-        <button onClick={()=> this.down()}>-</button>
+      <button onClick={()=> this.up()}>+</button>
         <div>{this.state.number} </div>
-        <button onClick={()=> this.up()}>+</button>
+        <button onClick={()=> this.down()}>-</button><br/>
         <button onClick={()=> this.reset()}>Reset</button>
+
       </div>
 
     )

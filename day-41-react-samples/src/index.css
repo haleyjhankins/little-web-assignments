@@ -1,10 +1,12 @@
 html{
   font-family: sans-serif;
+  height: 1000px;
   margin: 0 auto;
-  width: 50%;
   padding: 10px;
   text-align: center;
 }
+
+
 
 a{
   margin: 5px;
@@ -12,4 +14,30 @@ a{
 
 button{
   margin: 5px;
+}
+
+div{
+  overflow: auto;
+}
+
+.div1{
+  float: left;
+  display: block;
+  width: 30%;
+  height: 1000px;
+  margin-left: 5%;
+  background-color: grey;
+
+}
+
+.div1 img{
+  width: 60%;
+
+}
+
+.div2{
+float: right;
+display: block;
+width: 60%;
+margin-right: 5%;
 }
