@@ -1,7 +1,14 @@
 import React from 'react';
 import $ from 'jquery';
 
+
+import Api from './Api.js';
+console.log(Api);
+
+
+
 const bucketId = '2578c34d-70b9-49e0-b042-bd59d33734dc';
+const baseUrl = 'https:spiffy-todo-api.herokuapp.com/api/';
 
 class TodoApp extends React.Component {
 
@@ -15,35 +22,25 @@ class TodoApp extends React.Component {
   }
 
   refreshData() {
-    $.ajax({
-      url: `https://spiffy-todo-api.herokuapp.com/api/items?bucketId=${bucketId}`
-    })
-    .done((data) => {
-      console.log('what data do I have?', data);
+
+    const cb = (data) => {
       this.setState({
         items: data.items
-      })
-    });
+      });
+    };
+
+    Api.refreshData(cb);
   }
 
-  deleteItem(id){
-    $.ajax({
-      url: `https://spiffy-todo-api.herokuapp.com/api/item/${id}?bucketId=${bucketId}`,
-      method: 'DELETE'
-    })
-    .done((data) => {
-      this.refreshData();
-    });
-  }
+  deleteItem(id, evt) {
+    evt.stopPropagation();
 
-  markAsComplete(id){
-    $.ajax({
-      url: `https://spiffy-todo-api.herokuapp.com/api/item/${id}/togglestatus?bucketId=${bucketId}`,
-      method: 'POST'
-    })
-    .done(() =>{
-      this.refreshData();
-    })
+    Api.delete(id, () => this.refreshData());
+
+    // This won't work until we implement promises but it sure would be nice
+    // Api.delete(id)
+    //   .done(() => this.refreshData());
+    //
   }
 
   componentDidMount() {
@@ -51,22 +48,21 @@ class TodoApp extends React.Component {
   }
 
   createNewItem(inputText) {
-    //ajax call to save data
+    Api.createNewItem(inputText, () => this.refreshData());
+  }
+
+  toggleCompletedness(id) {
     $.ajax({
-      url: `https://spiffy-todo-api.herokuapp.com/api/item?bucketId=${bucketId}`,
-      method: 'POST',
-      data: {
-        text: inputText
-      }
+      url: `${baseUrl}item/${id}/togglestatus?bucketId=${bucketId}`,
+      method: 'POST'
     })
-    .done((data) => {
-      console.log('what do I get back?', data);
-
+    .done(() => {
       this.refreshData();
+    })
 
 
 
-    });
+
   }
 
   handleKeyUp(evt) {
@@ -87,17 +83,15 @@ class TodoApp extends React.Component {
 
   render() {
 
-    const listItems = this.state.items.map((x) => {
+    const listItems = this.state.items.map((x) =>  {
 
-        const className=x.isComplete ? 'complete' : '';
+      const className = x.isComplete ? 'complete' : '';
 
-        return <li className={className} key={x.id} onClick={() => this.markAsComplete(x.id)} >
-                {x.text}
-                <button onClick={(evt) => this.deleteItem(x.id)}>delete</button>
-            </li>
-          })
-
-
+      return <li className={className} key={x.id} onClick={() => this.toggleCompletedness(x.id)}>
+               {x.text}
+               <button onClick={(evt) => this.deleteItem(x.id, evt)}>delete</button>
+             </li>
+    })
 
     return (
       <div>
