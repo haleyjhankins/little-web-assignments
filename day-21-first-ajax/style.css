@@ -53,6 +53,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+
+  /* ****************************************** */
+  /*     Begin my CSS     */
+  /* ****************************************** */
+
+
 body {
   background-color: black; }
 
@@ -79,7 +85,33 @@ body {
   float: left;
   color: white; }
 
-.paragraph-1 {
+.trilogy{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2em;
+  margin-bottom: 2%;
+  }
+
+  .warning{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1em;
+  margin-bottom: 5%;
+  }
+
+.title{
+  font-family: sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 15px;
+  }
+
+#poster{
+  margin: 0 auto;
+  display: block;
+}
+
+.paragraph {
   font-size: 20px;
   font-family: sans-serif;
   line-height: 35px; }
@@ -96,7 +128,7 @@ body {
   min-height: 700px;
   margin-left: 5%; }
 
-img {
+#empire {
   border-radius: 100%;
   width: 125px;
   margin: 25px auto 0px auto;
@@ -111,29 +143,16 @@ a {
   color: #8e2424;
   font-size: 20px; }
 
-h1 {
-  color: white;
-  font-size: 70px;
-  font-family: "distantgalaxy",serif;
-  text-align: center;
-  margin-bottom: 50px; }
+  #trilogy{
+    margin: 25px auto 0px auto;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
 
-div {
-  padding: 5px; }
+  }
 
-li {
-  border: solid 1px red;
-  float: left;
-  width: 600px;
-  color: white;
-  margin-left: 5%;
-  margin-bottom: 5%; }
-
-h2 {
-  font-weight: bold;
-  font-family: helvetica, sans-serif;
-  color: white;
-  padding-bottom: 5px; }
+  /* ****************************************** */
+  /*     Individual Page Styling     */
+  /* ****************************************** */
 
 h1 {
   color: white;
@@ -142,19 +161,28 @@ h1 {
   text-align: center;
   margin-bottom: 50px; }
 
+  /*h2 {
+    font-weight: bold;
+    font-family: helvetica, sans-serif;
+    color: white;
+    padding-bottom: 5px; }*/
+
+#empire{
+  border-radius: 100%;
+  width: 125px;
+  margin: 25px auto 0px auto;
+  display: block; }
+}
+
 div {
-  padding: 5px; }
+margin: auto;
+}
 
 li {
   border: solid 1px red;
-  float: left;
-  width: 600px;
+  font-family: sans-serif;
+  min-width: 50%;
   color: white;
-  margin-left: 5%;
-  margin-bottom: 5%; }
-
-h2 {
-  font-weight: bold;
-  font-family: helvetica, sans-serif;
-  color: white;
-  padding-bottom: 5px; }
+  margin-right: 20%;
+  margin-bottom: 2%;
+  float:right;

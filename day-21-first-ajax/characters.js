@@ -17,10 +17,15 @@ promise.done(function(data){
   for (var i=0; i < data.results.length; i++){
     // console.log('each object', data.results[i] + 'li');
 
-    var html= Mustache.render(template, {
+    var html = Mustache.render(template, {
       name: data.results[i].name,
       gender: data.results[i].gender,
-      hairColor: data.results[i].hair_color
+      birthYear: data.results[i].birth_year,
+      height: data.results[i].height,
+      mass: data.results[i].mass,
+      skin: data.results[i].skin_color,
+      eye: data.results[i].eye_color,
+      hair: data.results[i].hair_color
     });
 
     totalHtml += html;

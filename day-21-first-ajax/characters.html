@@ -2,23 +2,38 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Star Wars People List</title>
+    <title>Star Wars Character List</title>
     <link href= 'style.css' rel= 'stylesheet'/>
   </head>
   <body>
 
     <h1 class= "characters">Characters</h1>
 
+    <div class="body-container">
+      <div id= left-nav>
+        <a href="index.html"><img id="empire" src="empire.svg"></img></a>
+        <a href=characters.html>Characters</a>
+        <a href=planets.html>Planets</a>
+        <a href=starships.html>Starships</a>
+      </div>
+    </div>
+
     <ul id= "character-list">
     </ul>
 
     <script type="text/html" id="list-template">
-      <li>
+      <li class="list-item">
         <h2>{{name}}</h2>
-        <div> Gender: {{gender}}</div>
-        <div>Hair Color: {{hairColor}}</div>
+        <div>Gender: {{gender}}</div>
+        <div>Birthyear: {{birthYear}}</div>
+        <div>Height: {{height}} cm</div>
+        <div>Mass: {{mass}} kg</div>
+        <div>Skin Color: {{skin}}</div>
+        <div>Eye Color: {{eye}}</div>
+        <div>Hair Color: {{hair}}</div>
       </li>
     </script>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
